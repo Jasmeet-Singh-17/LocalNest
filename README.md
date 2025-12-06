@@ -110,19 +110,6 @@ LocalNest/
 - 🏘️ PG and co-living spaces
 - 💵 Sell property
 
-## 🌐 Available Pages
-
-- `/` - Homepage with hero banner and category overview
-- `/explore` - Browse all available properties
-- `/buy` - Properties for sale
-- `/delhi` - Properties in Delhi/NCR
-- `/mumbai` - Properties in Mumbai
-- `/bangalore` - Properties in Bangalore
-- `/post-property` - List your property
-- `/owners-services` - Services for property owners
-- `/login` - User authentication
-- `/help` - Customer support
-
 ## 📝 Scripts
 
 - `npm run dev` - Start development server
