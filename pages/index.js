@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Navbar from '@/components/navbar'
-import Search from '@/components/search'
+import Propertycard from '@/components/propertycard'
+import Footer from '@/components/footer'
 
 class Index extends PureComponent {
   constructor(props) {
@@ -141,7 +142,16 @@ class Index extends PureComponent {
           </div>
         </section>
 
+        <section>
+          <div className="container">
+            <h1 className='text-center fw-semibold m-3 mb-3'>Newly-added properties</h1>
 
+
+            <Propertycard />
+          </div>
+        </section>
+
+        <Footer />
       </>
     )
   }

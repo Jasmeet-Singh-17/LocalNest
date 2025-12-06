@@ -34,6 +34,36 @@ const properties = [
         place: "Greater Noida West",
         price: "₹15,500 / month",
     },
+
+    // ⭐ NEW PROPERTIES BELOW
+    {
+        id: 6,
+        img: "/props/6.jpeg",
+        name: "Royal Nest Towers",
+        place: "Vaishali, Ghaziabad",
+        price: "₹22,000 / month",
+    },
+    {
+        id: 7,
+        img: "/props/7.jpeg",
+        name: "Lakeview Residency",
+        place: "Faridabad Sector 21",
+        price: "₹27,500 / month",
+    },
+    {
+        id: 8,
+        img: "/props/8.jpeg",
+        name: "Elite Metro Suites",
+        place: "Connaught Place, Delhi",
+        price: "₹55,000 / month",
+    },
+    {
+        id: 9,
+        img: "/props/9.jpeg",
+        name: "Well Apartments",
+        place: "Pitampura, Delhi",
+        price: "₹19,500 / month",
+    },
 ];
 
 export default properties;
