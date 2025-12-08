@@ -10,7 +10,7 @@ function Navbar() {
                 </Link>
             </nav>
 
-            <nav className="navbar navbar-expand-md navbar-light bg-light d-flex justify-content-evenly align-items-center">
+            <nav className="navbar navbar-expand-md sticky-top navbar-light bg-light d-flex justify-content-evenly align-items-center">
                 <div className="container">
                     <Link href="/" className="navbar-brand fw-bold fs-4">
                         LocalNest  <i class="ri-home-smile-fill"></i>

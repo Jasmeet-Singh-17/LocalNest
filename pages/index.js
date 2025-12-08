@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import Link from 'next/link'
 import Navbar from '@/components/navbar'
 import Propertycard from '@/components/propertycard'
 import Footer from '@/components/footer'
@@ -17,28 +18,29 @@ class Index extends PureComponent {
       <>
         <Navbar />
 
-        <section style={{ height: "500px", position: "relative" }} >
-
-          <img src="/1.webp" alt="banner"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover"
-            }}
+        <section style={{ height: "500px", position: "relative" }} className='mb-1'>
+          <img
+            src="/1.webp"
+            alt="banner"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
 
-          <div style={{
-            position: "absolute",
-            top: "35%",
-            left: "20%",
-            transform: "translate(-50%, -50%)",
-          }}>
-            <h1 className='text-white fs-1 fw-bold' style={{
-              textShadow: "0 2px 10px rgba(0,0,0,0.6)"
-            }}>
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "15%",
+              transform: "translateY(-50%)",
+            }}
+          >
+            <h1
+              className="text-white fs-1 fw-bold"
+              style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6)" }}
+            >
               Welcome to LocalNest
             </h1>
-            <div className="d-flex gap-3 my-4 justify-content-center flex-wrap">
+
+            <div className="d-flex gap-3 my-4 justify-content-start flex-wrap">
               <span className="badge bg-white text-success px-3 py-2 rounded-pill">
                 <i className="ri-check-fill me-1"></i> Instant Booking
               </span>
@@ -132,11 +134,10 @@ class Index extends PureComponent {
                 <div className="card rounded-3 p-1" style={{ cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <img src="./6.webp" className="card-img img-fluid" alt="1"></img>
-                    <h5 className="card-title fw-semibold mt-1">PG and co-living</h5>
+                    <h5 className="card-title fw-semibold mt-1">PG and Renting</h5>
                   </div>
                 </div>
               </div>
-
 
             </div>
           </div>
@@ -148,6 +149,48 @@ class Index extends PureComponent {
 
 
             <Propertycard />
+          </div>
+        </section>
+
+        <section className="py-5 mb-5" style={{ backgroundColor: '#f8f9fa' }}>
+          <div className="container">
+            <h1 className="text-center fw-semibold mb-4">
+              Find Better Places to Live, Work and Wonder...
+            </h1>
+
+            <div className="row g-4 align-items-center">
+              <div className="col-12 col-lg-6">
+                <img
+                  src="./8.webp"
+                  className="img-fluid w-100 rounded-3"
+                  style={{ objectFit: 'cover' }}
+                  alt="Rental home"
+                />
+              </div>
+
+              <div className="col-12 col-lg-6 d-flex align-items-center">
+                <div className="w-100 text-start ps-lg-5">
+                  <p className="text-uppercase fw-semibold text-muted mb-2">
+                    Rent a Home
+                  </p>
+
+                  <h1 className="fw-bold display-5 mb-3">
+                    Rental Homes for Everyone
+                  </h1>
+
+                  <p className="fs-5 text-muted mb-4">
+                    Explore from Apartments, builder floors, villas and more
+                  </p>
+
+                  <Link
+                    href="/explore"
+                    className="btn btn-dark btn-lg fw-semibold px-4"
+                  >
+                    Explore Renting
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
